@@ -15,22 +15,22 @@
     "appimage-file-weekly": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-k8/BxHpyTJZjOwmbBXn9q/hfb7MBSOTW8lAWst3FXw8=",
+        "narHash": "sha256-GJ4+Aw3UhGMcDQVal9YBr41HZ9ZUu0aR4zrlH6jWgSI=",
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-41264-conda-Linux-x86_64-py311.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-41314-conda-Linux-x86_64-py311.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-41264-conda-Linux-x86_64-py311.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-41314-conda-Linux-x86_64-py311.AppImage"
       }
     },
     "astocad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1744909868,
-        "narHash": "sha256-BZt+ljhOxOrcQMfSXZ/Vzg+5C2RhuS5e48CX/uVsGkI=",
+        "lastModified": 1744957841,
+        "narHash": "sha256-K+qYmSZQMq7xXUhsDRgLwm58e4MOnXtn0GjtRY+2OFM=",
         "ref": "AstoCAD",
-        "rev": "d4e852769b56f5c3d475bc47d1806ba0883b7411",
+        "rev": "3da2f1a7272c5d93beccb3147db3c66a9a756f2c",
         "revCount": 41331,
         "submodules": true,
         "type": "git",
@@ -46,11 +46,11 @@
     "freecad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1744921969,
-        "narHash": "sha256-2jZdQGStVy7wjzUKekMBgw1Qmq5uYHSSkPcAw6ZdGjQ=",
+        "lastModified": 1745251957,
+        "narHash": "sha256-C8OJqKafwkaS7r++AZG/NXLl752htEhoy7/buUkWnBY=",
         "ref": "main",
-        "rev": "336df3dc1ce85e0af06c596b762517e98b301d2f",
-        "revCount": 41305,
+        "rev": "23190abeb27cba40cdd7c89482f1c994f2568cb8",
+        "revCount": 41353,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/FreeCAD/FreeCAD"
