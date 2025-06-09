@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     appimage-file-weekly = {
-      url = "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-41314-conda-Linux-x86_64-py311.AppImage";
+      url = "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-42095-conda-Linux-x86_64-py311.AppImage";
       flake = false;
     };
     appimage-file-rt = {
