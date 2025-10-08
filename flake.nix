@@ -1,8 +1,8 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     appimage-file-weekly = {
-      url = "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-42095-conda-Linux-x86_64-py311.AppImage";
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2025.10.08/FreeCAD_weekly-2025.10.08-Linux-x86_64-py311.AppImage";
       flake = false;
     };
     appimage-file-rt = {
@@ -25,17 +25,45 @@
     };
   };
 
-  outputs = { nixpkgs, ... }@inputs: {
-    packages = builtins.listToAttrs (map (system: {
-        name = system;
-        value = with import nixpkgs { inherit system; config.allowUnfree = true;}; rec {
-          freecad-appimage = pkgs.callPackage (import ./package/appimage-default.nix) { src = inputs.appimage-file-weekly;  pname = "freecad"; version = "stable"; };
-          freecad-weekly-appimage = pkgs.callPackage (import ./package/appimage-default.nix) { src = inputs.appimage-file-weekly;  pname = "freecad"; version = "weekly"; };
-          freecadrt-appimage = pkgs.callPackage (import ./package/appimage-default.nix) { src = inputs.appimage-file-rt; pname = "freecad-rt"; version = "stable"; };
-          astocad = pkgs.callPackage (import ./package/default.nix) { src = inputs.astocad-src; pname = "astocad"; version = "dev"; };
-          freecad = pkgs.callPackage (import ./package/default.nix) { src = inputs.freecad-src; pname = "freecad"; version = "dev"; };
-          default = freecad-appimage;
-        };
-      })[ "x86_64-linux" ]);
-  };
+  outputs =
+    { nixpkgs, ... }@inputs:
+    {
+      packages = builtins.listToAttrs (
+        map (system: {
+          name = system;
+          value =
+            with import nixpkgs {
+              inherit system;
+              config.allowUnfree = true;
+            }; rec {
+              freecad-appimage = pkgs.callPackage (import ./package/appimage-default.nix) {
+                src = inputs.appimage-file-weekly;
+                pname = "freecad";
+                version = "stable";
+              };
+              freecad-weekly-appimage = pkgs.callPackage (import ./package/appimage-default.nix) {
+                src = inputs.appimage-file-weekly;
+                pname = "freecad";
+                version = "weekly";
+              };
+              freecadrt-appimage = pkgs.callPackage (import ./package/appimage-default.nix) {
+                src = inputs.appimage-file-rt;
+                pname = "freecad-rt";
+                version = "stable";
+              };
+              astocad = pkgs.callPackage (import ./package/default.nix) {
+                src = inputs.astocad-src;
+                pname = "astocad";
+                version = "dev";
+              };
+              freecad = pkgs.callPackage (import ./package/default.nix) {
+                src = inputs.freecad-src;
+                pname = "freecad";
+                version = "dev";
+              };
+              default = freecad-appimage;
+            };
+        }) [ "x86_64-linux" ]
+      );
+    };
 }

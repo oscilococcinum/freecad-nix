@@ -15,23 +15,23 @@
     "appimage-file-weekly": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-rgYTQ2/k8TmhFVZqOYPWSSJg2QASHYVyUyY1nt06AU8=",
+        "narHash": "sha256-neQAoFpn8yMz9K7gRotAOfJoto9ck6Cu0uB9YFcWdBc=",
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-42095-conda-Linux-x86_64-py311.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2025.10.08/FreeCAD_weekly-2025.10.08-Linux-x86_64-py311.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD-Bundle/releases/download/weekly-builds/FreeCAD_weekly-builds-42095-conda-Linux-x86_64-py311.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2025.10.08/FreeCAD_weekly-2025.10.08-Linux-x86_64-py311.AppImage"
       }
     },
     "astocad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1748005539,
-        "narHash": "sha256-UuvROt5+Hdib8+wrIYd+/UUJ/+5zxcWZ0AJSnT9QJ9g=",
+        "lastModified": 1759496156,
+        "narHash": "sha256-hBoEN1AynHuR0aynGSrfHEoZvAPlnqM1D0SelxP5mPI=",
         "ref": "AstoCAD",
-        "rev": "f3061debedacda10df4b447d9dedc891c38a6c64",
-        "revCount": 41851,
+        "rev": "54c65bf7adf938aafd02ef30d2dfdfc9bf814b34",
+        "revCount": 43871,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/AstoCAD/FreeCAD"
@@ -46,11 +46,11 @@
     "freecad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1749413465,
-        "narHash": "sha256-iX4Xg5271Mp8+12tzMqy3c1Ulu5ZxTTP6oFK6HYwRVo=",
+        "lastModified": 1759938983,
+        "narHash": "sha256-qzFbLk28b7UPC20KZgrFSFQhXsqHFPBtRdM42Aeggm0=",
         "ref": "main",
-        "rev": "a38689b6fb94b1008f91508dd09f32610d7464aa",
-        "revCount": 42113,
+        "rev": "8912dfd7e13677d01f19546e741698cd5f3c4702",
+        "revCount": 43888,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/FreeCAD/FreeCAD"
@@ -64,16 +64,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1749237914,
-        "narHash": "sha256-N5waoqWt8aMr/MykZjSErOokYH6rOsMMXu3UOVH5kiw=",
+        "lastModified": 1759831965,
+        "narHash": "sha256-vgPm2xjOmKdZ0xKA6yLXPJpjOtQPHfaZDRtH+47XEBo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "70c74b02eac46f4e4aa071e45a6189ce0f6d9265",
+        "rev": "c9b6fb798541223bbb396d287d16f43520250518",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.05",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
