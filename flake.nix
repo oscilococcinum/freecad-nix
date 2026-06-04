@@ -1,8 +1,8 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     appimage-file-weekly = {
-      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2025.10.15/FreeCAD_weekly-2025.10.15-Linux-x86_64-py311.AppImage";
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.06.03/FreeCAD_weekly-2026.06.03-Linux-x86_64.AppImage";
       flake = false;
     };
     appimage-file-rt = {
