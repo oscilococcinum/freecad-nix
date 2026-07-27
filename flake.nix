@@ -2,11 +2,15 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     appimage-file-weekly = {
-      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.06.03/FreeCAD_weekly-2026.06.03-Linux-x86_64.AppImage";
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage";
+      flake = false;
+    };
+    appimage-file-stable = {
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-Linux-x86_64-py311.AppImage";
       flake = false;
     };
     appimage-file-rt = {
-      url = "https://github.com/realthunder/FreeCAD/releases/download/20241003stable/FreeCAD-Link-Stable-Linux-x86_64-py3.11-20241003.AppImage";
+      url = "https://github.com/realthunder/FreeCAD/releases/download/Tip/FreeCAD-Link-Tip-Linux-x86_64-py3.11-20251015.AppImage";
       flake = false;
     };
     astocad-src = {
@@ -37,7 +41,7 @@
               config.allowUnfree = true;
             }; rec {
               freecad-appimage = pkgs.callPackage (import ./package/appimage-default.nix) {
-                src = inputs.appimage-file-weekly;
+                src = inputs.appimage-file-stable;
                 pname = "freecad";
                 version = "stable";
               };

@@ -3,35 +3,47 @@
     "appimage-file-rt": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-x7idb7szr0eko4/n0SgFh1rn87e26JtcOFdU3Ljtn80=",
+        "narHash": "sha256-n1SAlhgEvkklYJdfzij9Gbn/fgQL9n1n2TTlc0R7QZk=",
         "type": "file",
-        "url": "https://github.com/realthunder/FreeCAD/releases/download/20241003stable/FreeCAD-Link-Stable-Linux-x86_64-py3.11-20241003.AppImage"
+        "url": "https://github.com/realthunder/FreeCAD/releases/download/Tip/FreeCAD-Link-Tip-Linux-x86_64-py3.11-20251015.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/realthunder/FreeCAD/releases/download/20241003stable/FreeCAD-Link-Stable-Linux-x86_64-py3.11-20241003.AppImage"
+        "url": "https://github.com/realthunder/FreeCAD/releases/download/Tip/FreeCAD-Link-Tip-Linux-x86_64-py3.11-20251015.AppImage"
+      }
+    },
+    "appimage-file-stable": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-HtQtNlaa53QxK025VQw+XEMviRRNiKGSal75Q6lWHTg=",
+        "type": "file",
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-Linux-x86_64-py311.AppImage"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-Linux-x86_64-py311.AppImage"
       }
     },
     "appimage-file-weekly": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-nBPMNebq3wqjmTnBq/ZROdfI6OcawrJ9qGva9zVYcjM=",
+        "narHash": "sha256-8wL0dTsjscbHRWHEgGTXdkB/2D9JtuVzt13UEFNJihA=",
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.06.03/FreeCAD_weekly-2026.06.03-Linux-x86_64.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.06.03/FreeCAD_weekly-2026.06.03-Linux-x86_64.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage"
       }
     },
     "astocad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1780517235,
-        "narHash": "sha256-UvcMBnTbuw9CuMc5F5WxljgJVfEv1Q8AaRCNx5souKs=",
+        "lastModified": 1785156106,
+        "narHash": "sha256-9dVaog4MX8l/9+nLMQsLIzuntlGJt7trkzr3B4kUEnw=",
         "ref": "AstoCAD",
-        "rev": "625967042ffa42fafc4a8303ff42950e1dfa08c4",
-        "revCount": 47181,
+        "rev": "3e657edbbab7c303ff3ecdda580fac80f4322e84",
+        "revCount": 47916,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/AstoCAD/FreeCAD"
@@ -46,11 +58,11 @@
     "freecad-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1780581168,
-        "narHash": "sha256-jMq3+cbdfZF7aURAHJMBAMCowkC5RqRf90HH5DQ3cJc=",
+        "lastModified": 1785167060,
+        "narHash": "sha256-SQRC14i7gyKlGU5teHsNwDwE0qeiUSBzYJZj6TWpd94=",
         "ref": "main",
-        "rev": "afa3bbe86c37687728336bfcca14b9779115f19e",
-        "revCount": 47124,
+        "rev": "6438b1bbee1a92e905a4d3263ed69595a22b2faa",
+        "revCount": 47840,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/FreeCAD/FreeCAD"
@@ -64,11 +76,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1780453794,
-        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
+        "lastModified": 1785104993,
+        "narHash": "sha256-eKbrvPoAOFutbYMdbB3r5EQVmFxKv24iKqHPPUXA0gM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
+        "rev": "8623c4c20aa4ca2f5fb81510d2944066c3fb0d96",
         "type": "github"
       },
       "original": {
@@ -81,6 +93,7 @@
     "root": {
       "inputs": {
         "appimage-file-rt": "appimage-file-rt",
+        "appimage-file-stable": "appimage-file-stable",
         "appimage-file-weekly": "appimage-file-weekly",
         "astocad-src": "astocad-src",
         "freecad-src": "freecad-src",
