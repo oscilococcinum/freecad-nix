@@ -13,14 +13,17 @@
       url = "https://github.com/realthunder/FreeCAD/releases/download/Tip/FreeCAD-Link-Tip-Linux-x86_64-py3.11-20251015.AppImage";
       flake = false;
     };
-    astocad-src = {
-      type = "git";
-      url = "https://github.com/AstoCAD/FreeCAD";
-      ref = "AstoCAD";
-      submodules = true;
+    astocad-dev-src = {
+      type = "tarball";
+      url = "https://github.com/AstoCAD/FreeCAD/releases/download/weekly-builds/freecad_source.tar.gz";
       flake = false;
     };
-    freecad-src = {
+    freecad-stable-src = {
+      type = "tarball";
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/freecad_source_1.1.3.tar.gz";
+      flake = false;
+    };
+    freecad-dev-src = {
       type = "git";
       url = "https://github.com/FreeCAD/FreeCAD";
       ref = "main";
@@ -55,13 +58,18 @@
                 pname = "freecad-rt";
                 version = "stable";
               };
-              astocad = pkgs.callPackage (import ./package/default.nix) {
-                src = inputs.astocad-src;
+              astocad-dev = pkgs.callPackage (import ./package/default.nix) {
+                src = inputs.astocad-dev-src;
                 pname = "astocad";
                 version = "dev";
               };
-              freecad = pkgs.callPackage (import ./package/default.nix) {
-                src = inputs.freecad-src;
+              freecad-stable = pkgs.callPackage (import ./package/default.nix) {
+                src = inputs.freecad-stable-src;
+                pname = "freecad";
+                version = "1.1.3";
+              };
+              freecad-dev = pkgs.callPackage (import ./package/default.nix) {
+                src = inputs.freecad-dev-src;
                 pname = "freecad";
                 version = "dev";
               };
