@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     appimage-file-weekly = {
-      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage";
+      url = "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.09.23/FreeCAD_weekly-2026.09.23-Linux-x86_64.AppImage";
       flake = false;
     };
     appimage-file-stable = {

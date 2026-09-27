@@ -27,42 +27,36 @@
     "appimage-file-weekly": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-8wL0dTsjscbHRWHEgGTXdkB/2D9JtuVzt13UEFNJihA=",
+        "narHash": "sha256-ht6pQIcpB4AowrqI7twBHqebkME3BJkjPojf+JkOekI=",
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.09.23/FreeCAD_weekly-2026.09.23-Linux-x86_64.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.07.22/FreeCAD_weekly-2026.07.22-Linux-x86_64.AppImage"
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/weekly-2026.09.23/FreeCAD_weekly-2026.09.23-Linux-x86_64.AppImage"
       }
     },
-    "astocad-src": {
+    "astocad-dev-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1785156106,
-        "narHash": "sha256-9dVaog4MX8l/9+nLMQsLIzuntlGJt7trkzr3B4kUEnw=",
-        "ref": "AstoCAD",
-        "rev": "3e657edbbab7c303ff3ecdda580fac80f4322e84",
-        "revCount": 47916,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/AstoCAD/FreeCAD"
+        "lastModified": 1764253218,
+        "narHash": "sha256-ydBaY1bdMmin81bccTVd//7oeQEGEMJKMKiVIFBvH1k=",
+        "type": "tarball",
+        "url": "https://github.com/AstoCAD/FreeCAD/releases/download/weekly-builds/freecad_source.tar.gz"
       },
       "original": {
-        "ref": "AstoCAD",
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/AstoCAD/FreeCAD"
+        "type": "tarball",
+        "url": "https://github.com/AstoCAD/FreeCAD/releases/download/weekly-builds/freecad_source.tar.gz"
       }
     },
-    "freecad-src": {
+    "freecad-dev-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1785167060,
-        "narHash": "sha256-SQRC14i7gyKlGU5teHsNwDwE0qeiUSBzYJZj6TWpd94=",
+        "lastModified": 1790543281,
+        "narHash": "sha256-SQDFqopZSF/MCdZQ0oHNZyKitCwAIkmVDQvZZ/oUqJ4=",
         "ref": "main",
-        "rev": "6438b1bbee1a92e905a4d3263ed69595a22b2faa",
-        "revCount": 47840,
+        "rev": "6985a96a2d85750f7e4f37b8acd3194bf175c287",
+        "revCount": 48953,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/FreeCAD/FreeCAD"
@@ -72,15 +66,28 @@
         "submodules": true,
         "type": "git",
         "url": "https://github.com/FreeCAD/FreeCAD"
+      }
+    },
+    "freecad-stable-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784955372,
+        "narHash": "sha256-qJLm4MA3Fs+GmUte1gsdCo5jHkpd5fNrZ9a5ZH+tb+4=",
+        "type": "tarball",
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/freecad_source_1.1.3.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/freecad_source_1.1.3.tar.gz"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1785104993,
-        "narHash": "sha256-eKbrvPoAOFutbYMdbB3r5EQVmFxKv24iKqHPPUXA0gM=",
+        "lastModified": 1790450978,
+        "narHash": "sha256-/eLCD/X9kaWJqPR47+fDozEC87Hjmm3i8gJbYmDAD7g=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "8623c4c20aa4ca2f5fb81510d2944066c3fb0d96",
+        "rev": "5e2305d577ca00acbba631b05cb1094d172b29f3",
         "type": "github"
       },
       "original": {
@@ -95,8 +102,9 @@
         "appimage-file-rt": "appimage-file-rt",
         "appimage-file-stable": "appimage-file-stable",
         "appimage-file-weekly": "appimage-file-weekly",
-        "astocad-src": "astocad-src",
-        "freecad-src": "freecad-src",
+        "astocad-dev-src": "astocad-dev-src",
+        "freecad-dev-src": "freecad-dev-src",
+        "freecad-stable-src": "freecad-stable-src",
         "nixpkgs": "nixpkgs"
       }
     }
