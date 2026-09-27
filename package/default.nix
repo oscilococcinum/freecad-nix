@@ -32,6 +32,7 @@
   which,
   gtk3,
   gsettings-desktop-schemas,
+  gtest,
   pname,
   src,
   version,
@@ -88,6 +89,7 @@ freecad-utils.makeCustomizable (
       zlib
       opencascade-occt
       microsoft-gsl
+      gtest
       qt6.qtbase
       qt6.qtsvg
       qt6.qttools
